@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prework Study Guide</title>
-  </head>
-  <body>
-    <header id="header">
-      <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-    </header>
-    <main>
-      <!-- Student code goes here -->
-    </main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenji Fleming</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
 
-    <footer>
-      <p>I can code!</p>
-    </footer>
-  </body>
+<body> 
+    <!-- main logo / nav  -->
+    <header>
+        <h1>Kenji Fleming</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#">Resume</a> 
+            <!-- will add resume when I update it and make it webpage ready-->
+        </nav>
+    </header>
+    
+    <section class="section-1">
+        <div>
+            <h2>Welcome to my page!</h2>
+        </div>
+    </section>
+
+    <main class="page-wrapper">
+        <!-- about me -->
+        <section class="page-section" id="about">
+            <h2>About Me</h2>
+            <div>
+                <p>My name is Kenji Fleming and I was born and raised in Orlando, FL. I have my bacherlors in Economics from UCF and am currently working on my web-developoment course through UCF.</p>
+                <p>My hobbies include playing video games, watching sports and F1, and working out. I hope to land a software engineer job at Disney once I finish this course. As I complete this course and expand my portfolio I will be coming back to update this webpage with my current portfolio as well as update the webpage to reflect my current skills.</p>
+            </div>
+        </section>
+
+        <br>
+        <!-- put portfolio here -->
+        <section class="page-section" id="work">
+            <h2>Work</h2>
+            <div class="flex-container">
+                <a href="https://www.pexels.com/photo/orange-tabby-cat-lying-on-black-wooden-table-13442289/" class="flex-item surf-report">
+                    <!-- im going to add these files and extensions later on once i've built them -->
+                    <div>
+                        <h3>Surf Report</h3>
+                        <span>MERN Stack</span>
+                    </div>
+                </a>
+                <a href="https://www.pexels.com/photo/brown-cookies-with-different-designs-5583535/" class="flex-item calc">
+                    <div>
+                        <h3>Calculator</h3>
+                        <span>React/JavaScript/CSS</span>
+                    </div>
+                </a>
+
+                <a href="https://www.pexels.com/photo/autumn-trees-on-a-forest-10075042/" class="flex-item led-wall">
+                    <div>
+                        <h3>Pastel Puzzles</h3>
+                        <span>MERN Stack</span>
+                    </div>
+                </a>
+
+                <a href="https://www.pexels.com/photo/mountain-goat-on-rocks-13761592/" class="flex-item run-buddy">
+                    <div>
+                        <h3>Run Buddy</h3>
+                        <span>HTML/CSS</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <br>
+        <!-- contact info -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div>
+                <address>
+                    <a href="tel:+5555555555">555.555.5555</a>
+                    <!-- im not gonna put my actual number here until I have a work line -->
+                    <a href=mailto:kwf1999@gmail.com>Email</a>
+                    <a href="https://github.com/N3tRunn3rr/Module-2-challenge.git">Github</a>
+                </address>
+            </div>
+        </section>
+    </main>
+    
+</body>
 </html>

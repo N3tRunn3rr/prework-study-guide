@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+/* color pallete for webpage */
+:root {
+    --primary: #017201;
+    --secondary: #5A5A5A;
+    --tertiary: #7393B3;
+    --brownish: #806517;
+    --dark: #000;
+    --light: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--secondary);
+    background-color: var(--light);
+    line-height: 1.5;
+    /* this changed the color of the text in the body */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header { 
+    padding: 15px 5% 15px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary);
+    box-shadow: 5px 5px 25px;
+}
+
+header h1 { 
+    color: var(--light);
+    background-color: var(--primary);
+    padding: 5px;
+    margin: 0;
+    font-size: 3;
+    line-height: 1;
+}
+/* changed color of header and color of text inside */
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* give flex properties to the nav bar */
+
+nav a { 
+    text-decoration: none;
+    padding: 10px;
+    color: var(--dark);
+    margin-right: 10px;
+    transition: all 0.5s ease-in;
+}
+/* adjust the anchor tags content in nav bar */
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--light);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+main { 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-1 { 
+    background: var(--primary);
+    background-position: center;
+    min-height: 30px;
+    color: var(--light);
+    padding: 3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+/* affect the welcome to my page content and colors */
+
+
+.section-1 div { 
+    flex: 0 0 90%;
+}
+/* affects the positioning of 'welcome to my page' in the header/nav */
+
+.section-1 h2 {
+    background-color: var(--primary);
+    color: var(--light);
+    margin: 0;
+    padding: 5px;
+    font-size: 1.25em;
+    line-height: 1.5;
+    display: inline;
+}
+/* adjusted the color and text of box and content  */
+
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 4px solid var(--primary);
+    font-size: 4em;
+    line-height: 1.1;
+}
+
+.page-section div {
+    flex: 0 0 77%;
+}
+
+.page-section p { 
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item { 
+    border: 10px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--light);
+    min-height: 150px;
+    max-height: 150px;
+    /* idk what flex basis does so ill look it up later */
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 1rem;
+}
+
+.flex-item:first-child { 
+    min-height: 300px;
+    flex-basis: 100%;
+}
+
+.flex-item:nth-child(2) {
+    min-height: 150px;
+    flex-basis: 100%
+}
+
+.flex-item:nth-child(3) {
+    min-height: 150px;
+    flex-basis: 100%
+}
+
+.flex-item:nth-child(4) {
+    min-height: 150px;
+    flex-basis: 100%
+}
+
+.flex-item:hover {
+    background-color: var(--secondary);
+}
+/* changes the background color of work boxes when you hover */
+
+.flex-item div {
+    background-color: var(--primary);
+}
+
+.flex-item div:hover {
+    background-color: var(--secondary);
+}
+/* flex item changes color once you hover over the box and then again when you hover over the items in the box */
+
+
+@media screen and (max-width: 980px) {
+    header { 
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 10em;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2, 
+    .page-section > div {
+        flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 5px solid var(--primary);
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        text-align: left;
+        font-size: 7em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-item, 
+    .flex-item:first-child {
+        flex-basis: 100%;
+    }
+
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+
+    .section-1 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
